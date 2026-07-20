@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Profesional Janward Alfredo - IT Infrastructure, Network & Server Specialist dengan pengalaman 5+ tahun dalam pengelolaan server, virtualisasi, jaringan, dan keamanan.">
+    <meta name="description"
+        content="Portfolio Profesional Janward Alfredo - IT Infrastructure, Network & Server Specialist dengan pengalaman 5+ tahun dalam pengelolaan server, virtualisasi, jaringan, dan keamanan.">
     <title>Janward Alfredo | IT Infrastructure & Network Specialist</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <!-- Background Canvas Node Network -->
     <canvas id="network-canvas"></canvas>
@@ -56,17 +61,31 @@
                         <span class="gradient-text">&amp; Network Specialist</span>
                     </h1>
                     <p class="hero-description">
-                        Spesialis infrastruktur IT dengan pengalaman 5+ tahun mengelola jaringan korporat, virtualisasi server (Proxmox), keamanan fisik (123+ CCTV), dan otomatisasi backup untuk mendukung stabilitas operasional hingga &plusmn;200 pengguna.
+                        Spesialis infrastruktur IT dengan pengalaman 5+ tahun mengelola jaringan korporat, virtualisasi
+                        server (Proxmox), keamanan fisik (123+ CCTV), dan otomatisasi backup untuk mendukung stabilitas
+                        operasional hingga &plusmn;200 pengguna.
                     </p>
                     <div class="hero-cta">
                         <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
                         <a href="#terminal-section" class="btn btn-secondary">
-                            <svg class="icon-btn" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            <svg class="icon-btn" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
                             Coba CLI Terminal
                         </a>
                     </div>
                     <div class="location-tag">
-                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
                         <span>Cengkareng, Jakarta Barat</span>
                     </div>
                 </div>
@@ -92,14 +111,18 @@
                                     <svg id="latency-svg" viewBox="0 0 400 100" preserveAspectRatio="none">
                                         <defs>
                                             <linearGradient id="graph-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-                                                <stop offset="0%" stop-color="var(--accent-cyan)" stop-opacity="0.3"></stop>
-                                                <stop offset="100%" stop-color="var(--accent-cyan)" stop-opacity="0.0"></stop>
+                                                <stop offset="0%" stop-color="var(--accent-cyan)" stop-opacity="0.3">
+                                                </stop>
+                                                <stop offset="100%" stop-color="var(--accent-cyan)" stop-opacity="0.0">
+                                                </stop>
                                             </linearGradient>
                                         </defs>
                                         <!-- Gradient area -->
-                                        <path id="latency-area" fill="url(#graph-grad)" d="M 0 100 Q 100 100 200 100 T 400 100 L 400 100 L 0 100 Z"></path>
+                                        <path id="latency-area" fill="url(#graph-grad)"
+                                            d="M 0 100 Q 100 100 200 100 T 400 100 L 400 100 L 0 100 Z"></path>
                                         <!-- Line path -->
-                                        <path id="latency-line" fill="none" stroke="var(--accent-cyan)" stroke-width="2" d="M 0 100 Q 100 100 200 100 T 400 100"></path>
+                                        <path id="latency-line" fill="none" stroke="var(--accent-cyan)" stroke-width="2"
+                                            d="M 0 100 Q 100 100 200 100 T 400 100"></path>
                                     </svg>
                                 </div>
                             </div>
@@ -115,11 +138,13 @@
                                 </div>
                                 <div class="stat-box">
                                     <span class="stat-label">Active Users Connected</span>
-                                    <span class="stat-value text-emerald">~198 <span class="stat-sub">/ 200 Limit</span></span>
+                                    <span class="stat-value text-emerald">~198 <span class="stat-sub">/ 200
+                                            Limit</span></span>
                                 </div>
                                 <div class="stat-box">
                                     <span class="stat-label">CCTV Security Endpoints</span>
-                                    <span class="stat-value text-green">123 <span class="stat-sub">Nodes Active</span></span>
+                                    <span class="stat-value text-green">123 <span class="stat-sub">Nodes
+                                            Active</span></span>
                                 </div>
                             </div>
                             <!-- Automation Backup Status -->
@@ -149,13 +174,20 @@
                     <div class="about-text">
                         <h3>Halo, Saya Janward Alfredo</h3>
                         <p class="paragraph">
-                            Saya adalah seorang <strong>IT Infrastructure &amp; Network Specialist</strong> dengan komitmen tinggi dalam menjaga ketersediaan sistem, skalabilitas arsitektur server, keamanan data, dan efisiensi infrastruktur fisik maupun virtual.
+                            Saya adalah seorang <strong>IT Infrastructure &amp; Network Specialist</strong> dengan
+                            komitmen tinggi dalam menjaga ketersediaan sistem, skalabilitas arsitektur server, keamanan
+                            data, dan efisiensi infrastruktur fisik maupun virtual.
                         </p>
                         <p class="paragraph">
-                            Selama lebih dari 5 tahun berkarir di bidang teknologi informasi, saya telah merancang dan memelihara jaringan LAN/WAN korporat, mengelola server virtualisasi dengan Proxmox, mendesain sistem pencadangan otomatis (Automation Backup), serta memimpin proyek pemasangan dan perawatan CCTV berskala menengah (&plusmn;123 titik kamera).
+                            Selama lebih dari 5 tahun berkarir di bidang teknologi informasi, saya telah merancang dan
+                            memelihara jaringan LAN/WAN korporat, mengelola server virtualisasi dengan Proxmox,
+                            mendesain sistem pencadangan otomatis (Automation Backup), serta memimpin proyek pemasangan
+                            dan perawatan CCTV berskala menengah (&plusmn;123 titik kamera).
                         </p>
                         <p class="paragraph">
-                            Saya menyukai tantangan teknis kompleks, mulai dari pemulihan bencana (*disaster recovery*) akibat insiden kelistrikan kritis hingga penataan kabel jaringan terstruktur demi kemudahan pemeliharaan jangka panjang.
+                            Saya menyukai tantangan teknis kompleks, mulai dari pemulihan bencana (*disaster recovery*)
+                            akibat insiden kelistrikan kritis hingga penataan kabel jaringan terstruktur demi kemudahan
+                            pemeliharaan jangka panjang.
                         </p>
                     </div>
 
@@ -190,10 +222,16 @@
                     <!-- Card 1: Network & Security -->
                     <div class="skill-card">
                         <div class="skill-card-icon text-cyan">
-                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                </path>
+                            </svg>
                         </div>
                         <h3>Network &amp; Server Management</h3>
-                        <p>Mengelola infrastruktur jaringan lokal (LAN) maupun luas (WAN) menggunakan Mikrotik, managed switch, dan konfigurasi routing yang stabil.</p>
+                        <p>Mengelola infrastruktur jaringan lokal (LAN) maupun luas (WAN) menggunakan Mikrotik, managed
+                            switch, dan konfigurasi routing yang stabil.</p>
                         <div class="skill-progress">
                             <div class="skill-progress-head">
                                 <span>Mikrotik, Routing, &amp; LAN/WAN</span>
@@ -208,10 +246,16 @@
                     <!-- Card 2: Virtualization -->
                     <div class="skill-card">
                         <div class="skill-card-icon text-blue">
-                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11h-6m6 0a2 2 0 012 2v6a2 2 0 01-2 2h-6a2 2 0 01-2-2v-6a2 2 0 012-2m6 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11h-6m6 0a2 2 0 012 2v6a2 2 0 01-2 2h-6a2 2 0 01-2-2v-6a2 2 0 012-2m6 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                </path>
+                            </svg>
                         </div>
                         <h3>Virtualization (Proxmox)</h3>
-                        <p>Migrasi server fisik ke mesin virtual (VM), optimasi alokasi resource hardware, monitoring performa VM, dan manajemen kluster hypervisor.</p>
+                        <p>Migrasi server fisik ke mesin virtual (VM), optimasi alokasi resource hardware, monitoring
+                            performa VM, dan manajemen kluster hypervisor.</p>
                         <div class="skill-progress">
                             <div class="skill-progress-head">
                                 <span>Hypervisor Proxmox &amp; VM Config</span>
@@ -226,10 +270,16 @@
                     <!-- Card 3: Windows Server & Storage -->
                     <div class="skill-card">
                         <div class="skill-card-icon text-emerald">
-                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
+                                </path>
+                            </svg>
                         </div>
                         <h3>Server Administration &amp; Cloud</h3>
-                        <p>Mengadministrasikan sistem operasi Windows Server 2019, OpenMediaVault (OMV), serta penyimpanan cloud internal seperti Nextcloud &amp; Immich.</p>
+                        <p>Mengadministrasikan sistem operasi Windows Server 2019, OpenMediaVault (OMV), serta
+                            penyimpanan cloud internal seperti Nextcloud &amp; Immich.</p>
                         <div class="skill-progress">
                             <div class="skill-progress-head">
                                 <span>Windows Server &amp; OMV NAS</span>
@@ -244,10 +294,16 @@
                     <!-- Card 4: CCTV & Infrastructure -->
                     <div class="skill-card">
                         <div class="skill-card-icon text-green">
-                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                </path>
+                            </svg>
                         </div>
                         <h3>Security Systems (CCTV)</h3>
-                        <p>Perancangan topologi kabel, instalasi DVR/NVR, konfigurasi kamera IP, integrasi sistem pemantauan terpusat, dan pemeliharaan fisik &amp; jaringan CCTV.</p>
+                        <p>Perancangan topologi kabel, instalasi DVR/NVR, konfigurasi kamera IP, integrasi sistem
+                            pemantauan terpusat, dan pemeliharaan fisik &amp; jaringan CCTV.</p>
                         <div class="skill-progress">
                             <div class="skill-progress-head">
                                 <span>CCTV IP &amp; Coaxial (123+ Nodes)</span>
@@ -262,10 +318,15 @@
                     <!-- Card 5: Automation Backup -->
                     <div class="skill-card">
                         <div class="skill-card-icon text-blue">
-                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 7.89M9 11l3 3L22 4"></path></svg>
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 7.89M9 11l3 3L22 4"></path>
+                            </svg>
                         </div>
                         <h3>Backup &amp; Automation</h3>
-                        <p>Mengembangkan penjadwalan backup server dan database otomatis menggunakan shell scripting (PowerShell/Bash) guna meminimalkan risiko kehilangan data.</p>
+                        <p>Mengembangkan penjadwalan backup server dan database otomatis menggunakan shell scripting
+                            (PowerShell/Bash) guna meminimalkan risiko kehilangan data.</p>
                         <div class="skill-progress">
                             <div class="skill-progress-head">
                                 <span>Automated Backup Scripts</span>
@@ -280,10 +341,16 @@
                     <!-- Card 6: Disaster Recovery -->
                     <div class="skill-card">
                         <div class="skill-card-icon text-cyan">
-                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                                </path>
+                            </svg>
                         </div>
                         <h3>Troubleshooting &amp; Recovery</h3>
-                        <p>Mendiagnosis kerusakan komponen akibat lonjakan listrik, pemulihan UPS/Power Supply, perbaikan kluster HDD, dan audit pencegahan insiden berikutnya.</p>
+                        <p>Mendiagnosis kerusakan komponen akibat lonjakan listrik, pemulihan UPS/Power Supply,
+                            perbaikan kluster HDD, dan audit pencegahan insiden berikutnya.</p>
                         <div class="skill-progress">
                             <div class="skill-progress-head">
                                 <span>Hardware &amp; System Recovery</span>
@@ -316,13 +383,27 @@
                             </div>
                             <h4 class="experience-company">PT Nico Urban Indonesia</h4>
                             <ul class="experience-tasks">
-                                <li>Mengelola infrastruktur IT perusahaan yang mencakup <strong>7 server fisik dan 5 virtual machine (Proxmox)</strong> untuk mendukung kelancaran operasional &plusmn;200 pengguna.</li>
-                                <li>Mengadministrasikan server Windows Server 2019, penyimpanan OMV, serta integrasi layanan internal <strong>Nextcloud dan Immich</strong> sebagai media penyimpanan terpusat yang aman.</li>
-                                <li>Merancang topologi, konfigurasi routing, serta instalasi perangkat jaringan (<strong>Mikrotik</strong>, managed/unmanaged switch) guna menyediakan konektivitas LAN/WAN berkecepatan tinggi yang aman.</li>
-                                <li>Memimpin instalasi, konfigurasi, dan maintenance sistem <strong>CCTV DVR/NVR terpadu sebanyak &plusmn;123 titik</strong> untuk menjamin cakupan keamanan fisik yang maksimal di area pabrik/kantor.</li>
-                                <li>Membuat program pencadangan otomatis (<strong>Automation Backup</strong>) terjadwal untuk server data dan database demi mempercepat proses pemulihan data jika terjadi kendala.</li>
-                                <li>Menangani insiden kelistrikan kritis (lonjakan voltase) yang merusak power supply, modul UPS, dan hard disk server secara cepat dan memimpin proses <strong>mitigasi data recovery</strong> hingga operasional normal kembali.</li>
-                                <li>Mengelola pengadaan hardware, koordinasi dengan vendor luar, serta memimpin tim teknisi IT harian untuk memastikan standar pelayanan IT internal berjalan efisien.</li>
+                                <li>Mengelola infrastruktur IT perusahaan yang mencakup <strong>7 server fisik dan 5
+                                        virtual machine (Proxmox)</strong> untuk mendukung kelancaran operasional
+                                    &plusmn;200 pengguna.</li>
+                                <li>Mengadministrasikan server Windows Server 2019, penyimpanan OMV, serta integrasi
+                                    layanan internal <strong>Nextcloud dan Immich</strong> sebagai media penyimpanan
+                                    terpusat yang aman.</li>
+                                <li>Merancang topologi, konfigurasi routing, serta instalasi perangkat jaringan
+                                    (<strong>Mikrotik</strong>, managed/unmanaged switch) guna menyediakan konektivitas
+                                    LAN/WAN berkecepatan tinggi yang aman.</li>
+                                <li>Memimpin instalasi, konfigurasi, dan maintenance sistem <strong>CCTV DVR/NVR terpadu
+                                        sebanyak &plusmn;123 titik</strong> untuk menjamin cakupan keamanan fisik yang
+                                    maksimal di area pabrik/kantor.</li>
+                                <li>Membuat program pencadangan otomatis (<strong>Automation Backup</strong>) terjadwal
+                                    untuk server data dan database demi mempercepat proses pemulihan data jika terjadi
+                                    kendala.</li>
+                                <li>Menangani insiden kelistrikan kritis (lonjakan voltase) yang merusak power supply,
+                                    modul UPS, dan hard disk server secara cepat dan memimpin proses <strong>mitigasi
+                                        data recovery</strong> hingga operasional normal kembali.</li>
+                                <li>Mengelola pengadaan hardware, koordinasi dengan vendor luar, serta memimpin tim
+                                    teknisi IT harian untuk memastikan standar pelayanan IT internal berjalan efisien.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -337,10 +418,15 @@
                             </div>
                             <h4 class="experience-company">Yayasan Sultan Iskandar Muda Medan</h4>
                             <ul class="experience-tasks">
-                                <li>Mengajar bidang studi TIK bagi siswa SMK dengan metode pembelajaran teoritis dan berorientasi praktik jaringan dasar dan perakitan komputer.</li>
-                                <li>Mengelola infrastruktur laboratorium komputer sekolah yang mencakup pemeliharaan &plusmn;40 unit komputer, server lab, dan konfigurasi jaringan lokal.</li>
-                                <li>Melakukan troubleshooting hardware, instalasi OS, pembagian alokasi IP address, dan penyediaan akses internet lab komputer.</li>
-                                <li>Memberikan bantuan teknis (IT Support) untuk operasional internal yayasan termasuk instalasi software administrasi dan pemeliharaan koneksi Wi-Fi lingkungan sekolah.</li>
+                                <li>Mengajar bidang studi TIK bagi siswa SMK dengan metode pembelajaran teoritis dan
+                                    berorientasi praktik jaringan dasar dan perakitan komputer.</li>
+                                <li>Mengelola infrastruktur laboratorium komputer sekolah yang mencakup pemeliharaan
+                                    &plusmn;40 unit komputer, server lab, dan konfigurasi jaringan lokal.</li>
+                                <li>Melakukan troubleshooting hardware, instalasi OS, pembagian alokasi IP address, dan
+                                    penyediaan akses internet lab komputer.</li>
+                                <li>Memberikan bantuan teknis (IT Support) untuk operasional internal yayasan termasuk
+                                    instalasi software administrasi dan pemeliharaan koneksi Wi-Fi lingkungan sekolah.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -355,7 +441,7 @@
                     <h2 class="section-title">Detail Proyek</h2>
                     <div class="title-underline"></div>
                 </div>
-                
+
                 <div class="project-filters">
                     <button class="filter-btn active" data-filter="all">Semua Proyek</button>
                     <button class="filter-btn" data-filter="servers">Infrastruktur &amp; Server</button>
@@ -369,15 +455,22 @@
                         <div class="project-meta">
                             <span class="project-cat">Servers &amp; Automation</span>
                             <span class="project-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4"></path></svg>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4">
+                                    </path>
+                                </svg>
                             </span>
                         </div>
                         <h3>Automation Backup Server</h3>
-                        <p class="project-desc">Membangun script pencadangan otomatis (automation backup) terjadwal untuk database SQL dan direktori server ke media penyimpanan eksternal (NAS/OMV).</p>
+                        <p class="project-desc">Membangun script pencadangan otomatis (automation backup) terjadwal
+                            untuk database SQL dan direktori server ke media penyimpanan eksternal (NAS/OMV).</p>
                         <ul class="project-highlights">
                             <li>Mengurangi risiko *human error* dalam tugas pencadangan harian secara manual.</li>
                             <li>Menggunakan shell scripting &amp; integrasi API penyimpanan awan internal.</li>
-                            <li>Mempercepat waktu pemulihan (*Recovery Time Objective*) saat terjadi kegagalan sistem.</li>
+                            <li>Mempercepat waktu pemulihan (*Recovery Time Objective*) saat terjadi kegagalan sistem.
+                            </li>
                         </ul>
                         <div class="project-tags">
                             <span>Bash/PowerShell</span>
@@ -392,15 +485,23 @@
                         <div class="project-meta">
                             <span class="project-cat">Security &amp; Hardware</span>
                             <span class="project-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                    </path>
+                                </svg>
                             </span>
                         </div>
                         <h3>Implementasi &amp; Upgrade CCTV (123 Titik)</h3>
-                        <p class="project-desc">Memimpin proyek instalasi dan upgrade kamera pengawas berbasis IP &amp; Analog dengan total 123 titik pantau di area pabrik dan gedung operasional.</p>
+                        <p class="project-desc">Memimpin proyek instalasi dan upgrade kamera pengawas berbasis IP &amp;
+                            Analog dengan total 123 titik pantau di area pabrik dan gedung operasional.</p>
                         <ul class="project-highlights">
                             <li>Merancang diagram sebaran kamera untuk meniadakan area titik buta (*blind spot*).</li>
-                            <li>Mengkonfigurasi server DVR/NVR terpusat dengan akses streaming lokal yang aman bagi manajemen.</li>
-                            <li>Menghubungkan jaringan kamera ke VLAN terpisah untuk menghindari interferensi bandwidth data internal.</li>
+                            <li>Mengkonfigurasi server DVR/NVR terpusat dengan akses streaming lokal yang aman bagi
+                                manajemen.</li>
+                            <li>Menghubungkan jaringan kamera ke VLAN terpisah untuk menghindari interferensi bandwidth
+                                data internal.</li>
                         </ul>
                         <div class="project-tags">
                             <span>DVR/NVR</span>
@@ -415,15 +516,24 @@
                         <div class="project-meta">
                             <span class="project-cat">Virtualization</span>
                             <span class="project-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    </path>
+                                </svg>
                             </span>
                         </div>
                         <h3>Modernisasi Infrastruktur Server</h3>
-                        <p class="project-desc">Melakukan migrasi server fisik lama ke lingkungan virtualisasi berbasis Hypervisor Proxmox guna menghemat efisiensi penggunaan daya dan kapasitas hardware.</p>
+                        <p class="project-desc">Melakukan migrasi server fisik lama ke lingkungan virtualisasi berbasis
+                            Hypervisor Proxmox guna menghemat efisiensi penggunaan daya dan kapasitas hardware.</p>
                         <ul class="project-highlights">
-                            <li>Membuat dan mengonfigurasi 5+ mesin virtual (VM) untuk membagi tugas web server, NAS, dan database.</li>
-                            <li>Mengimplementasikan alokasi beban resource CPU/RAM dinamis agar beban server seimbang.</li>
-                            <li>Membangun penyimpanan berbasis OMV, Nextcloud, dan Immich untuk file sharing kolaboratif.</li>
+                            <li>Membuat dan mengonfigurasi 5+ mesin virtual (VM) untuk membagi tugas web server, NAS,
+                                dan database.</li>
+                            <li>Mengimplementasikan alokasi beban resource CPU/RAM dinamis agar beban server seimbang.
+                            </li>
+                            <li>Membangun penyimpanan berbasis OMV, Nextcloud, dan Immich untuk file sharing
+                                kolaboratif.</li>
                         </ul>
                         <div class="project-tags">
                             <span>Proxmox VE</span>
@@ -438,15 +548,24 @@
                         <div class="project-meta">
                             <span class="project-cat">Network Engineering</span>
                             <span class="project-icon">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1">
+                                    </path>
+                                </svg>
                             </span>
                         </div>
                         <h3>Manajemen &amp; Penataan Kabel Jaringan</h3>
-                        <p class="project-desc">Mendesain ulang dan merapikan kabel distribusi jaringan (LAN) di ruang server pusat yang berantakan demi keamanan koneksi.</p>
+                        <p class="project-desc">Mendesain ulang dan merapikan kabel distribusi jaringan (LAN) di ruang
+                            server pusat yang berantakan demi keamanan koneksi.</p>
                         <ul class="project-highlights">
-                            <li>Melabeli ratusan port kabel LAN dan melakukan penataan rapi dengan patch panel baru.</li>
-                            <li>Mencegah risiko gangguan sinyal jaringan akibat lekukan kabel yang patah atau longgar.</li>
-                            <li>Mempersingkat waktu pencarian port bermasalah (*troubleshooting*) dari beberapa jam menjadi hitungan menit.</li>
+                            <li>Melabeli ratusan port kabel LAN dan melakukan penataan rapi dengan patch panel baru.
+                            </li>
+                            <li>Mencegah risiko gangguan sinyal jaringan akibat lekukan kabel yang patah atau longgar.
+                            </li>
+                            <li>Mempersingkat waktu pencarian port bermasalah (*troubleshooting*) dari beberapa jam
+                                menjadi hitungan menit.</li>
                         </ul>
                         <div class="project-tags">
                             <span>Cabling Management</span>
@@ -464,10 +583,11 @@
             <div class="container">
                 <div class="section-header text-center">
                     <h2 class="section-title">Interactive Network Console (CLI)</h2>
-                    <p class="section-subtitle">Masukkan perintah terminal untuk berinteraksi langsung dengan database portofolio saya.</p>
+                    <p class="section-subtitle">Masukkan perintah terminal untuk berinteraksi langsung dengan database
+                        portofolio saya.</p>
                     <div class="title-underline"></div>
                 </div>
-                
+
                 <div class="terminal-window">
                     <div class="terminal-titlebar">
                         <div class="terminal-buttons">
@@ -480,9 +600,12 @@
                     </div>
                     <div class="terminal-screen" id="terminal-screen">
                         <div class="terminal-output" id="terminal-output">
-                            <div class="terminal-line text-emerald">Connecting to janward-alfredo.id [192.168.1.100] via SSH...</div>
-                            <div class="terminal-line text-green">Connection Established. Welcome to Janward's Server Console v1.5.0!</div>
-                            <div class="terminal-line">Ketik <span class="text-cyan">help</span> untuk melihat daftar perintah yang didukung.</div>
+                            <div class="terminal-line text-emerald">Connecting to janward-alfredo.id [192.168.1.100] via
+                                SSH...</div>
+                            <div class="terminal-line text-green">Connection Established. Welcome to Janward's Server
+                                Console v1.5.0!</div>
+                            <div class="terminal-line">Ketik <span class="text-cyan">help</span> untuk melihat daftar
+                                perintah yang didukung.</div>
                             <div class="terminal-line">&nbsp;</div>
                         </div>
                         <div class="terminal-input-line">
@@ -505,12 +628,17 @@
                     <!-- Direct Contacts -->
                     <div class="contact-info animate-left">
                         <h3>Hubungi Secara Langsung</h3>
-                        <p class="paragraph">Ada pertanyaan, penawaran proyek infrastruktur IT, konsultasi jaringan, atau sekadar ingin berdiskusi mengenai virtualisasi server? Anda bisa menghubungi saya melalui detail di bawah ini:</p>
-                        
+                        <p class="paragraph">Ada pertanyaan, penawaran proyek infrastruktur IT, konsultasi jaringan,
+                            atau sekadar ingin berdiskusi mengenai virtualisasi server? Anda bisa menghubungi saya
+                            melalui detail di bawah ini:</p>
+
                         <div class="contact-details">
                             <div class="contact-item">
                                 <div class="contact-icon text-cyan">
-                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                    </svg>
                                 </div>
                                 <div class="contact-text">
                                     <h4>Email Resmi</h4>
@@ -520,31 +648,43 @@
 
                             <div class="contact-item">
                                 <div class="contact-icon text-blue">
-                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                    </svg>
                                 </div>
                                 <div class="contact-text">
                                     <h4>Nomor Handphone / WA</h4>
-                                    <a href="https://wa.me/62895611554304?text=halo%20Janward,%20saya%20ingin%20berdiskusi%20mengenai%20" target="_blank">0895-6115-54304</a>
+                                    <a href="https://wa.me/62895611554304?text=halo%20Janward,%20saya%20ingin%20berdiskusi%20mengenai%20"
+                                        target="_blank">0895-6115-54304</a>
                                 </div>
                             </div>
 
                             <div class="contact-item">
                                 <div class="contact-icon text-emerald">
-                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
+                                    </svg>
                                 </div>
                                 <div class="contact-text">
                                     <h4>Lokasi Domisili</h4>
-                                    <a href="https://maps.app.goo.gl/bhtS1P35WSdB9VKb7" target="_blank">Cengkareng, Jakarta Barat, DKI Jakarta</a>
+                                    <a href="https://maps.app.goo.gl/bhtS1P35WSdB9VKb7" target="_blank">Cengkareng,
+                                        Jakarta Barat, DKI Jakarta</a>
                                 </div>
                             </div>
 
                             <div class="contact-item">
                                 <div class="contact-icon text-blue">
-                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                                    <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                    </svg>
                                 </div>
                                 <div class="contact-text">
                                     <h4>LinkedIn</h4>
-                                    <a href="https://www.linkedin.com/in/janward-alfredo-2741981b7/" target="_blank">janward-alfredo-2741981b7</a>
+                                    <a href="https://www.linkedin.com/in/janward-alfredo-2741981b7/"
+                                        target="_blank">janward-alfredo-2741981b7</a>
                                 </div>
                             </div>
                         </div>
@@ -552,17 +692,25 @@
 
                     <!-- Contact Form -->
                     <div class="contact-form-container animate-right">
-                        <form id="contact-form" class="glass-form" onsubmit="event.preventDefault(); window.open('https://wa.me/62895611554304?text=halo,%20saya%20' + encodeURIComponent(document.getElementById('form-name').value) + ',%20' + encodeURIComponent(document.getElementById('form-message').value), '_blank');">
+                        <form id="contact-form" class="glass-form"
+                            onsubmit="event.preventDefault(); window.open('https://wa.me/62895611554304?text=halo,%20saya%20' + encodeURIComponent(document.getElementById('form-name').value) + ',%20' + encodeURIComponent(document.getElementById('form-message').value), '_blank');">
                             <div class="form-group">
                                 <label for="form-name">Nama Lengkap</label>
-                                <input type="text" id="form-name" placeholder="Masukkan nama lengkap Anda" required autocomplete="name">
+                                <input type="text" id="form-name" placeholder="Masukkan nama lengkap Anda" required
+                                    autocomplete="name">
                             </div>
                             <div class="form-group">
                                 <label for="form-message">Pesan Anda</label>
-                                <textarea id="form-message" rows="5" placeholder="Tuliskan detail pesan atau pertanyaan Anda di sini..." required></textarea>
+                                <textarea id="form-message" rows="5"
+                                    placeholder="Tuliskan detail pesan atau pertanyaan Anda di sini..."
+                                    required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">
-                                <svg class="icon-btn" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                                <svg class="icon-btn" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                </svg>
                                 Kirim Pesan
                             </button>
                             <div id="form-status" class="form-status"></div>
@@ -584,4 +732,5 @@
     <!-- JavaScript File -->
     <script src="index.js"></script>
 </body>
+
 </html>

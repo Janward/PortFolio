@@ -42,8 +42,13 @@
                     <li><a href="#experience" class="nav-link">Pengalaman</a></li>
                     <li><a href="#projects" class="nav-link">Proyek</a></li>
                     <li><a href="#terminal-section" class="nav-link">CLI Terminal</a></li>
-                    <li><a href="#contact" class="nav-link btn-contact-nav">Kontak</a></li>
-                    <li><button class="lang-toggle" onclick="toggleLanguage()" title="Toggle Language">ID</button></li>
+                    <li><a href="#contact" class="nav-link btn-contact-nav" data-i18n="navContact">Kontak</a></li>
+                    <li>
+                        <select class="lang-dropdown" onchange="setLanguage(this.value)">
+                            <option value="id">ID</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </li>
                 </ul>
             </nav>
     </header>

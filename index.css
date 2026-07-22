@@ -1381,3 +1381,27 @@ section {
         gap: 0.2rem;
     }
 }
+
+.lang-dropdown {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    padding: 0.35rem 0.6rem;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.lang-dropdown:hover, .lang-dropdown:focus {
+    border-color: var(--accent-cyan);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.lang-dropdown option {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}

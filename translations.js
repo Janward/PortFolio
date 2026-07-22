@@ -309,11 +309,10 @@ function setLanguage(lang) {
     localStorage.setItem('selectedLanguage', lang);
     currentLanguage = lang;
     
-    // Update language toggle button
-    const langToggle = document.querySelector('.lang-toggle');
-    if (langToggle) {
-        langToggle.textContent = lang === 'en' ? 'EN' : 'ID';
-        langToggle.setAttribute('data-lang', lang);
+    // Update language dropdown
+    const langDropdown = document.querySelector('.lang-dropdown');
+    if (langDropdown) {
+        langDropdown.value = lang;
     }
     
     // Update all elements with data-i18n attribute
@@ -331,30 +330,27 @@ function setLanguage(lang) {
     });
 }
 
-// Toggle language
-function toggleLanguage() {
-    const newLang = currentLanguage === 'en' ? 'id' : 'en';
-    setLanguage(newLang);
+function normalizeStr(str) {
+    return str.replace(/\s+/g, ' ').trim();
 }
 
 // Auto-tag elements on first load
 function autoTagElements() {
     const idDict = translations.id;
-    // We get all text elements
-    const elements = document.querySelectorAll('h1, h2, h3, h4, p, span, a, label, button, strong, li, div');
+    const elements = document.querySelectorAll('h1, h2, h3, h4, h5, p, span, a, label, button, strong, li, div');
     
-    // Reverse sort the dictionary by value length so longer matches are found first
     const entries = Object.entries(idDict).sort((a, b) => b[1].length - a[1].length);
 
     for (const [key, value] of entries) {
-        // Find elements that match
+        const normValue = normalizeStr(value);
         elements.forEach(el => {
             if (!el.hasAttribute('data-i18n')) {
-                // If the innerHTML matches closely
-                if (el.innerHTML.trim() === value || el.textContent.trim() === value) {
+                const normInner = normalizeStr(el.innerHTML);
+                const normText = normalizeStr(el.textContent);
+                if (normInner === normValue || normText === normValue) {
                     el.setAttribute('data-i18n', key);
                 } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-                    if (el.placeholder === value) {
+                    if (normalizeStr(el.placeholder) === normValue) {
                         el.setAttribute('data-i18n', key);
                     }
                 }
@@ -364,5 +360,7 @@ function autoTagElements() {
 }
 
 let currentLanguage = 'id';
-autoTagElements();
-initializeLanguage();
+document.addEventListener('DOMContentLoaded', () => {
+    autoTagElements();
+    initializeLanguage();
+});

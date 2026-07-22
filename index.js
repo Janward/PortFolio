@@ -20,6 +20,47 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+    // ====== Script unik untuk motivasi Janward ======
+    const janwardKalimat = [
+        "Teknologi bukan sekadar alat, tapi jembatan menuju masa depan.",
+        "Setiap bug adalah peluang untuk belajar lebih dalam.",
+        "Inovasi lahir dari keberanian mencoba hal baru.",
+        "Kode yang rapi mencerminkan pikiran yang terstruktur.",
+        "Solusi terbaik lahir dari kombinasi logika dan kreativitas.",
+        "Teknisi hebat bukan yang tahu segalanya, tapi yang tak pernah berhenti belajar.",
+        "Konsultan IT sejati adalah problem solver, bukan sekadar pengguna teknologi.",
+        "Setiap sistem bisa rusak, tapi semangat untuk memperbaiki tak boleh padam.",
+        "Teknologi berkembang cepat, tapi semangat belajar harus lebih cepat.",
+        "Profil profesional bukan hanya tentang skill, tapi juga tentang integritas.",
+    ];
+
+    let janwardIndexKalimat = 0;
+    const janwardMotivasiElement = document.getElementById("janward-motivasi-text");
+    const janwardKotak = document.querySelector(".janward-motivasi-content");
+
+    function janwardGantiKalimat() {
+        const teksBaru = janwardKalimat[janwardIndexKalimat];
+        janwardIndexKalimat = (janwardIndexKalimat + 1) % janwardKalimat.length;
+
+        // kosongkan dulu isi kotak
+        janwardMotivasiElement.textContent = "";
+        let i = 0;
+
+        function ketik() {
+            if (i < teksBaru.length) {
+                janwardMotivasiElement.textContent += teksBaru.charAt(i);
+                i++;
+                setTimeout(ketik, 50); // kecepatan ketikan (ms per huruf)
+            }
+        }
+        ketik();
+    }
+    // jalankan pertama kali
+    janwardMotivasiElement.textContent = janwardKalimat[janwardIndexKalimat];
+    janwardIndexKalimat++;
+
+    // ganti kalimat setiap 3 detik
+    setInterval(janwardGantiKalimat, 10000);
 
     // Active link highlighting on scroll
     const sections = document.querySelectorAll('section');
@@ -217,50 +258,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const cliData = {
             profile: `[Janward Alfredo]\n` +
-                     `Lokasi: Cengkareng, Jakarta Barat\n` +
-                     `Kontak: 0895611554304 | ajanward@gmail.com\n\n` +
-                     `Seorang IT Infrastructure & Network Specialist berpengalaman 5+ tahun dalam mengelola server,\n` +
-                     `virtualisasi (Proxmox), keamanan sistem (123+ CCTV), dan otomatisasi backup untuk mendukung\n` +
-                     `stabilitas operasional &plusmn;200 pengguna. Lulusan S1 Teknik Informatika (Mikroskill, GPA 3.21).`,
-            
+                `Lokasi: Cengkareng, Jakarta Barat\n` +
+                `Kontak: 0895611554304 | ajanward@gmail.com\n\n` +
+                `Seorang IT Infrastructure & Network Specialist berpengalaman 5+ tahun dalam mengelola server,\n` +
+                `virtualisasi (Proxmox), keamanan sistem (123+ CCTV), dan otomatisasi backup untuk mendukung\n` +
+                `stabilitas operasional &plusmn;200 pengguna. Lulusan S1 Teknik Informatika (Mikroskill, GPA 3.21).`,
+
             skills: `--- KEAHLIAN UTAMA ---\n` +
-                    `1. Network Management  : Mikrotik, managed switch, LAN/WAN, routing, VLAN\n` +
-                    `2. Virtualization      : Hypervisor Proxmox VE, Virtual Machines, Cluster monitoring\n` +
-                    `3. Server OS           : Windows Server 2019, OpenMediaVault (OMV) NAS\n` +
-                    `4. Cloud Services      : Nextcloud, Immich media server\n` +
-                    `5. System Security     : Desain DVR/NVR, instalasi & setup 123+ CCTV titik kamera\n` +
-                    `6. Automation & Backup : Penjadwalan database backup otomatis via scripting (PowerShell/Bash)\n` +
-                    `7. Troubleshooting     : Diagnosa hardware server, disaster recovery (UPS, PSU, HDD recovery)`,
-            
+                `1. Network Management  : Mikrotik, managed switch, LAN/WAN, routing, VLAN\n` +
+                `2. Virtualization      : Hypervisor Proxmox VE, Virtual Machines, Cluster monitoring\n` +
+                `3. Server OS           : Windows Server 2019, OpenMediaVault (OMV) NAS\n` +
+                `4. Cloud Services      : Nextcloud, Immich media server\n` +
+                `5. System Security     : Desain DVR/NVR, instalasi & setup 123+ CCTV titik kamera\n` +
+                `6. Automation & Backup : Penjadwalan database backup otomatis via scripting (PowerShell/Bash)\n` +
+                `7. Troubleshooting     : Diagnosa hardware server, disaster recovery (UPS, PSU, HDD recovery)`,
+
             experience: `--- RIWAYAT PENGALAMAN ---\n` +
-                        `1. SPV IT Network & Hardware - PT Nico Urban Indonesia (Januari 2023 - Sekarang)\n` +
-                        `   * Mengelola 7 server fisik & 5 virtual machine (Proxmox) untuk 200+ user.\n` +
-                        `   * Administrasi Windows Server 2019, OMV, Nextcloud & Immich.\n` +
-                        `   * Konfigurasi infrastruktur jaringan (Mikrotik & Managed Switches).\n` +
-                        `   * Memimpin instalasi, upgrade, dan integrasi 123+ titik CCTV DVR/NVR.\n` +
-                        `   * Mengembangkan skema backup server & database terjadwal otomatis.\n` +
-                        `   * Mengoordinasikan recovery hardware server akibat gangguan lonjakan daya listrik.\n` +
-                        `2. Guru TIK - Yayasan Sultan Iskandar Muda Medan (Oktober 2018 - Maret 2022)\n` +
-                        `   * Mengajar bidang TIK untuk siswa SMK dengan pendekatan praktis.\n` +
-                        `   * Mengelola operasional dan memelihara 40+ unit PC di laboratorium komputer.\n` +
-                        `   * Menyediakan bantuan IT internal dan mengonfigurasi jaringan LAN/Wi-Fi yayasan.`,
-            
+                `1. SPV IT Network & Hardware - PT Nico Urban Indonesia (Januari 2023 - Sekarang)\n` +
+                `   * Mengelola 7 server fisik & 5 virtual machine (Proxmox) untuk 200+ user.\n` +
+                `   * Administrasi Windows Server 2019, OMV, Nextcloud & Immich.\n` +
+                `   * Konfigurasi infrastruktur jaringan (Mikrotik & Managed Switches).\n` +
+                `   * Memimpin instalasi, upgrade, dan integrasi 123+ titik CCTV DVR/NVR.\n` +
+                `   * Mengembangkan skema backup server & database terjadwal otomatis.\n` +
+                `   * Mengoordinasikan recovery hardware server akibat gangguan lonjakan daya listrik.\n` +
+                `2. Guru TIK - Yayasan Sultan Iskandar Muda Medan (Oktober 2018 - Maret 2022)\n` +
+                `   * Mengajar bidang TIK untuk siswa SMK dengan pendekatan praktis.\n` +
+                `   * Mengelola operasional dan memelihara 40+ unit PC di laboratorium komputer.\n` +
+                `   * Menyediakan bantuan IT internal dan mengonfigurasi jaringan LAN/Wi-Fi yayasan.`,
+
             projects: `--- DETAIL PROYEK UTAMA ---\n` +
-                      `1. Automation Backup Server (Python/Shell Scripting)\n` +
-                      `   - Memprogram backup otomatis terjadwal untuk database SQL & server files ke OMV NAS.\n` +
-                      `2. Implementasi & Upgrade CCTV (DVR/NVR/IP Cameras)\n` +
-                      `   - Memimpin instalasi 123 titik CCTV di area pabrik dengan segmentasi VLAN jaringan terpisah.\n` +
-                      `3. Modernisasi Infrastruktur Server (Proxmox Virtualization)\n` +
-                      `   - Migrasi server fisik lama ke hypervisor Proxmox dengan 5+ VM aktif, optimasi alokasi hardware.\n` +
-                      `4. Manajemen Kabel Jaringan (LAN Cables & Rack Server)\n` +
-                      `   - Mengatur ulang kabel server berantakan menggunakan patch panel baru untuk mempercepat troubleshooting.`,
-            
+                `1. Automation Backup Server (Python/Shell Scripting)\n` +
+                `   - Memprogram backup otomatis terjadwal untuk database SQL & server files ke OMV NAS.\n` +
+                `2. Implementasi & Upgrade CCTV (DVR/NVR/IP Cameras)\n` +
+                `   - Memimpin instalasi 123 titik CCTV di area pabrik dengan segmentasi VLAN jaringan terpisah.\n` +
+                `3. Modernisasi Infrastruktur Server (Proxmox Virtualization)\n` +
+                `   - Migrasi server fisik lama ke hypervisor Proxmox dengan 5+ VM aktif, optimasi alokasi hardware.\n` +
+                `4. Manajemen Kabel Jaringan (LAN Cables & Rack Server)\n` +
+                `   - Mengatur ulang kabel server berantakan menggunakan patch panel baru untuk mempercepat troubleshooting.`,
+
             contact: `--- DETAIL KONTAK ---\n` +
-                     `Email      : ajanward@gmail.com\n` +
-                     `Handphone  : 0895-6115-54304\n` +
-                     `Alamat     : Cengkareng, Jakarta Barat, DKI Jakarta\n` +
-                     `LinkedIn   : linkedin.com/in/janward-alfredo (Dummy)\n` +
-                     `GitHub     : github.com/janward-alfredo (Dummy)`
+                `Email      : ajanward@gmail.com\n` +
+                `Handphone  : 0895-6115-54304\n` +
+                `Alamat     : Cengkareng, Jakarta Barat, DKI Jakarta\n` +
+                `LinkedIn   : linkedin.com/in/janward-alfredo (Dummy)\n` +
+                `GitHub     : github.com/janward-alfredo (Dummy)`
         };
 
         const printLine = (text, className = '') => {
@@ -289,14 +330,14 @@ document.addEventListener('DOMContentLoaded', () => {
             switch (cmd) {
                 case 'help':
                     printLine(`Perintah yang tersedia:\n` +
-                              `  <span class="text-cyan">about</span>       - Ringkasan profil profesional Janward Alfredo\n` +
-                              `  <span class="text-cyan">skills</span>      - Daftar keahlian teknis (network, virtualization, dll)\n` +
-                              `  <span class="text-cyan">experience</span>  - Riwayat pengalaman kerja profesional\n` +
-                              `  <span class="text-cyan">projects</span>    - Detail proyek yang pernah dikerjakan\n` +
-                              `  <span class="text-cyan">contact</span>     - Detail kontak langsung\n` +
-                              `  <span class="text-cyan">ping</span>        - Jalankan utilitas ping jaringan ke server portofolio\n` +
-                              `  <span class="text-cyan">clear</span>       - Hapus seluruh output layar terminal\n` +
-                              `  <span class="text-cyan">exit</span>        - Keluar dari sesi console`, 'text-light');
+                        `  <span class="text-cyan">about</span>       - Ringkasan profil profesional Janward Alfredo\n` +
+                        `  <span class="text-cyan">skills</span>      - Daftar keahlian teknis (network, virtualization, dll)\n` +
+                        `  <span class="text-cyan">experience</span>  - Riwayat pengalaman kerja profesional\n` +
+                        `  <span class="text-cyan">projects</span>    - Detail proyek yang pernah dikerjakan\n` +
+                        `  <span class="text-cyan">contact</span>     - Detail kontak langsung\n` +
+                        `  <span class="text-cyan">ping</span>        - Jalankan utilitas ping jaringan ke server portofolio\n` +
+                        `  <span class="text-cyan">clear</span>       - Hapus seluruh output layar terminal\n` +
+                        `  <span class="text-cyan">exit</span>        - Keluar dari sesi console`, 'text-light');
                     break;
                 case 'about':
                 case 'profile':
@@ -324,7 +365,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 case 'ping':
                     const host = arg || 'janward-alfredo.id';
                     printLine(`PING ${host} (192.168.1.100) 56(84) bytes of data.`, 'text-cyan');
-                    
+
                     let seq = 1;
                     const interval = setInterval(() => {
                         const time = (Math.random() * 5 + 8).toFixed(2);
@@ -339,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             terminalInput.focus();
                         }
                     }, 500);
-                    
+
                     // Temporarily disable input during ping loop
                     terminalInput.disabled = true;
                     break;
@@ -438,7 +479,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm && formStatus) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             // Collect Form data
             const name = document.getElementById('form-name').value;
             const email = document.getElementById('form-email').value;

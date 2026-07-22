@@ -19,6 +19,30 @@
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ====== Styling unik untuk motivasi Janward ====== */
+.janward-motivasi-box {
+    width: 100%;
+    margin: 0px auto;
+    perspective: 1000px;
+}
+
+.janward-motivasi-content {
+    display: inline-block;
+    width: 100%;
+    /*background: linear-gradient(to bottom, #090d16, #64748b);*/
+    /* gradasi agar terlihat balok */
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: left;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+
+    /* efek tombol balok 3D */
+
+}
+
 /* Base Styles */
 * {
     margin: 0;
@@ -98,11 +122,25 @@ a {
     background-clip: text;
 }
 
-.text-blue { color: var(--accent-blue); }
-.text-cyan { color: var(--accent-cyan); }
-.text-green { color: var(--accent-green); }
-.text-emerald { color: var(--accent-emerald); }
-.text-center { text-align: center; }
+.text-blue {
+    color: var(--accent-blue);
+}
+
+.text-cyan {
+    color: var(--accent-cyan);
+}
+
+.text-green {
+    color: var(--accent-green);
+}
+
+.text-emerald {
+    color: var(--accent-emerald);
+}
+
+.text-center {
+    text-align: center;
+}
 
 .section-header {
     margin-bottom: 4rem;
@@ -218,9 +256,13 @@ a {
 }
 
 .logo-icon {
-    font-family: var(--font-mono);
+    /*font-family: var(--font-mono);-->
     color: var(--accent-cyan);
-    font-weight: 700;
+    font-weight: 700;*/
+    width: 30px;
+    /* atur ukuran sesuai kebutuhan */
+    height: auto;
+    /* biar proporsional */
 }
 
 .logo-text span {
@@ -261,7 +303,8 @@ a {
     padding: 0.25rem 0;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--accent-cyan);
 }
 
@@ -276,7 +319,8 @@ a {
     transition: var(--transition-smooth);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -341,9 +385,21 @@ section {
 }
 
 @keyframes blink-ping {
-    0% { transform: scale(0.9); opacity: 0.5; }
-    50% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 8px var(--accent-green); }
-    100% { transform: scale(0.9); opacity: 0.5; }
+    0% {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+        box-shadow: 0 0 8px var(--accent-green);
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
 }
 
 .hero-title {
@@ -426,8 +482,15 @@ section {
 }
 
 @keyframes pulse-glow {
-    from { opacity: 0.5; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1.1); }
+    from {
+        opacity: 0.5;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.1);
+    }
 }
 
 .uptime-badge {
@@ -560,7 +623,8 @@ section {
     background: rgba(9, 13, 22, 0.4);
 }
 
-.about-text h3, .about-education h3 {
+.about-text h3,
+.about-education h3 {
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--text-white);
@@ -690,10 +754,25 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.bg-cyan { background: var(--accent-cyan); box-shadow: 0 0 8px var(--accent-cyan); }
-.bg-blue { background: var(--accent-blue); box-shadow: 0 0 8px var(--accent-blue); }
-.bg-emerald { background: var(--accent-emerald); box-shadow: 0 0 8px var(--accent-emerald); }
-.bg-green { background: var(--accent-green); box-shadow: 0 0 8px var(--accent-green); }
+.bg-cyan {
+    background: var(--accent-cyan);
+    box-shadow: 0 0 8px var(--accent-cyan);
+}
+
+.bg-blue {
+    background: var(--accent-blue);
+    box-shadow: 0 0 8px var(--accent-blue);
+}
+
+.bg-emerald {
+    background: var(--accent-emerald);
+    box-shadow: 0 0 8px var(--accent-emerald);
+}
+
+.bg-green {
+    background: var(--accent-green);
+    box-shadow: 0 0 8px var(--accent-green);
+}
 
 /* Experience Section (2-Column Grid) */
 .experience-section {
@@ -827,7 +906,8 @@ section {
     transition: var(--transition-smooth);
 }
 
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover,
+.filter-btn.active {
     background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
     color: var(--bg-darker);
     border-color: transparent;
@@ -969,9 +1049,17 @@ section {
     display: inline-block;
 }
 
-.close-btn { background-color: var(--accent-red); }
-.min-btn { background-color: #eab308; }
-.max-btn { background-color: var(--accent-green); }
+.close-btn {
+    background-color: var(--accent-red);
+}
+
+.min-btn {
+    background-color: #eab308;
+}
+
+.max-btn {
+    background-color: var(--accent-green);
+}
 
 .terminal-title-text {
     font-family: var(--font-mono);
@@ -1037,7 +1125,8 @@ section {
     background: rgba(9, 13, 22, 0.5);
 }
 
-.contact-info h3, .contact-form-container h3 {
+.contact-info h3,
+.contact-form-container h3 {
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--text-white);
@@ -1075,7 +1164,8 @@ section {
     margin-bottom: 0.25rem;
 }
 
-.contact-text a, .contact-text span {
+.contact-text a,
+.contact-text span {
     font-size: 1.1rem;
     color: var(--text-white);
     font-weight: 600;
@@ -1108,7 +1198,8 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     background: rgba(5, 8, 14, 0.6);
     border: 1px solid var(--border-color);
@@ -1121,7 +1212,8 @@ section {
     transition: var(--transition-smooth);
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group textarea:focus {
     border-color: var(--accent-cyan);
     box-shadow: 0 0 10px rgba(0, 242, 254, 0.15);
     background: rgba(5, 8, 14, 0.8);
@@ -1134,8 +1226,13 @@ section {
     text-align: center;
 }
 
-.form-status.success { color: var(--accent-emerald); }
-.form-status.error { color: var(--accent-red); }
+.form-status.success {
+    color: var(--accent-emerald);
+}
+
+.form-status.error {
+    color: var(--accent-red);
+}
 
 /* Footer */
 .main-footer {
@@ -1174,7 +1271,8 @@ section {
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.animate-left.active, .animate-right.active {
+.animate-left.active,
+.animate-right.active {
     opacity: 1;
     transform: translateX(0);
 }
@@ -1184,15 +1282,18 @@ section {
     .grid-2 {
         gap: 2rem;
     }
+
     .hero-title {
         font-size: 3rem;
     }
+
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
+
     /* Navbar Mobile */
     .nav-toggle {
         display: flex;
@@ -1259,17 +1360,21 @@ section {
     section {
         padding: 5rem 0;
     }
+
     .hero-title {
         font-size: 2.25rem;
     }
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
+
     .dashboard-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
     }
+
     .time-header {
         flex-direction: column;
         align-items: flex-start;
